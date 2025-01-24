@@ -1,14 +1,55 @@
-# Analisis-Data-Text
+# Analisis Data Teks
 
-Deskripsi Proyek:
-Proyek ini bertujuan untuk melakukan analisis data teks dengan menggunakan visualisasi word cloud menggunakan bahasa pemrograman Python. Langkah-langkah yang akan dilakukan dalam proyek ini mencakup tahap preprocessing, seperti tokenisasi, penghapusan stopwords, dan lemmatisasi, untuk membersihkan dan mempersiapkan teks sebelum dilakukan visualisasi.
+## Deskripsi Proyek
+Proyek ini bertujuan untuk melakukan analisis data teks dengan menggunakan teknik pemrosesan teks dan visualisasi data. Fokus utama dari proyek ini adalah membuat **word cloud** untuk memvisualisasikan kata-kata yang paling sering muncul dalam teks, setelah melalui tahap **preprocessing** untuk memastikan teks bersih dan siap dianalisis.
 
-Dengan menggunakan pemrograman Python, proyek ini akan mengimplementasikan teknik-teknik pemrosesan teks seperti tokenisasi untuk membagi teks menjadi kata-kata, penghapusan stopwords untuk menghilangkan kata-kata umum yang tidak relevan, dan lemmatisasi untuk mengubah kata-kata ke bentuk dasarnya. Setelah proses preprocessing selesai, proyek ini akan membuat visualisasi word cloud, yang akan menampilkan kata-kata yang paling sering muncul dalam teks dengan ukuran yang proporsional.
+### Ruang Lingkup Proyek
+Proyek ini mencakup langkah-langkah berikut:
+1. **Preprocessing Data Teks**:
+   - **Tokenisasi**: Memecah teks menjadi unit-unit kecil (kata atau token).
+   - **Penghapusan Stopwords**: Menghapus kata-kata umum yang tidak memberikan informasi penting (contoh: "dan", "yang", "atau").
+   - **Lemmatisasi**: Mengubah kata-kata ke bentuk dasarnya untuk konsistensi.
+   - **Pembersihan Teks**: Menghapus angka, tanda baca, atau karakter khusus yang tidak relevan.
 
-Tujuan dari proyek ini adalah untuk memberikan pemahaman yang lebih baik tentang struktur dan pola dalam data teks yang dianalisis, serta untuk memvisualisasikan kata-kata yang paling dominan dalam teks tersebut. Dengan melihat word cloud, kita dapat dengan cepat mengidentifikasi kata-kata kunci dan pola yang muncul dalam data teks.
+2. **Visualisasi Word Cloud**:
+   - Membuat representasi visual dari kata-kata yang paling sering muncul dalam teks.
+   - Ukuran kata dalam word cloud proporsional dengan frekuensi kemunculannya dalam data.
 
-Dengan melakukan analisis ini, diharapkan kita dapat memperoleh wawasan yang berharga tentang topik atau isu yang dibahas dalam data teks, serta mengkomunikasikan hasil analisis secara visual dengan menggunakan word cloud. Hal ini dapat bermanfaat untuk berbagai tujuan dan juga analisis data Text.
+### Teknologi yang Digunakan
+Proyek ini menggunakan teknologi dan pustaka berikut:
+- **Python**: Bahasa pemrograman utama untuk analisis data.
+- **NLTK**: Untuk preprocessing teks, seperti tokenisasi, penghapusan stopwords, dan lemmatisasi.
+- **WordCloud**: Untuk membuat visualisasi word cloud.
+- **Matplotlib** dan **Seaborn**: Untuk visualisasi tambahan.
+- **Pandas**: Untuk manipulasi data teks.
 
+### Tujuan Proyek
+- **Memahami Struktur dan Pola Teks**: Dengan melakukan preprocessing, proyek ini membantu mengidentifikasi pola dan struktur dalam data teks.
+- **Visualisasi Kata Kunci**: Word cloud membantu mengidentifikasi kata-kata paling dominan secara visual.
+- **Wawasan dari Data Teks**: Memberikan wawasan tentang topik atau isu yang dibahas dalam data teks, yang dapat digunakan untuk berbagai tujuan analisis.
 
+### Contoh Visualisasi
+Di bawah ini adalah contoh visualisasi word cloud yang dihasilkan dalam proyek ini:
+Catatan: Ganti path/to/example-wordcloud.png dengan jalur file gambar jika Anda menyertakan contoh word cloud dalam repositori.
 
-
+## Cara Menggunakan
+1. **Clone repositori ini:**
+   ```bash
+   git clone https://github.com/username/analisis-data-teks.git
+2. Masuk ke direktori proyek:
+   ```bash
+   cd analisis-data-teks
+3. Instal dependensi:
+   ```bash
+   pip install -r requirements.txt
+Struktur Direktori
+   ```bash
+analisis-data-teks/
+│
+├── data/                 # Dataset untuk analisis teks
+├── notebooks/            # Notebook Jupyter untuk eksplorasi interaktif
+├── src/                  # Implementasi preprocessing dan visualisasi
+├── results/              # Output visualisasi word cloud
+├── README.md             # Dokumentasi proyek
+├── requirements.txt      # Daftar pustaka yang diperlukan
+└── main.py               # Skrip utama untuk menjalankan analisis
